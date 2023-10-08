@@ -11,8 +11,8 @@ yarn start
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The result is not revalidated as it should be based on:
+The result should be revalidated based on:
 ```
 export const revalidate = 1
 ```
-and also after some refreshes, it returns a totally empty page. Try it in another browser or a private tab to bypass the browser cache and you'll see the empty page rather than the stale not revalidated data.
+but after some refreshes, it stops updating and returns a totally empty page. If it is stale in your current tab, try it in another browser or a private tab to bypass the browser cache and you'll see the empty page rather than the stale not revalidated data.
